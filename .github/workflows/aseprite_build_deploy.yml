@@ -60,7 +60,7 @@ jobs:
         prerelease: false
 
   build-aseprite:
-    name: Build Aseprite
+    name: Build latest Aseprite
     needs: check-version
     if: ${{ needs.check-version.outputs.should_build }}
     runs-on: ${{ matrix.os }}
